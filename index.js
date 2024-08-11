@@ -22,7 +22,8 @@ setIndicator("#ccc");
 async function cpy_password(){
     try{
         await navigator.clipboard.writeText(passwordDisplay.value);
-        copyMsg.innerText= "copied";
+        // copyMsg.innerText= "copied";
+        alert("Message Copied");
     }
     catch(error){
         alert("didn't copy right now");
